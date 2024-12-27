@@ -1,1 +1,24 @@
-<h2>brian pages</h2>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juego de Fútbol</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="goal" onclick="scoreGoal()">
+            <p>¡Haz clic para meter un gol!</p>
+        </div>
+    </div>
+    <div id="goalModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>¡Gol! Inserta una imagen:</p>
+            <input type="file" id="imageInput">
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
